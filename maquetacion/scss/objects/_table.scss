@@ -1,0 +1,218 @@
+/*------------------------------------*\
+$TABLE
+\*------------------------------------*/
+.cont__special {
+    h3 {
+        width: 50%;
+        border-bottom: 3px solid $table;
+        padding-bottom: 5px;   
+    }
+}
+.days__title {
+    width: 50%;
+    border-bottom: 3px solid $table;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    .number {
+        @include font-size(40px);
+        font-weight: bold;
+    }
+    .month {
+        @include font-size(36px);
+        font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    }
+    .subject {
+        @include font-size(24px);
+        text-transform: uppercase;
+        color: rgba($table, .7);
+        font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    }
+}
+.days__table {
+    #cabecera {
+        border-bottom: 5px solid #49677b;
+        display: table;
+        padding: 1% 0;
+        width: 100%;
+        h3 {
+            color: #353535;
+            display: table-cell;
+            font-size: 64px;
+            line-height: 64px;
+            width: 80%;
+            font-family: 'Lato', arial;
+        }
+        h6 {
+            color: #8195a1;
+            font-size: 40px;
+            line-height: 40px;
+            font-weight: normal;
+            display: table-cell;
+            text-align:right;
+            font-family: 'Lato', arial;
+        }
+    }
+    #cuerpo {
+        padding-top: 2%;
+        width: 100%;
+    }
+    .today {
+        background: #dfe2e5 none repeat scroll 0 0;
+    }
+    .ifecha {
+        border-right: 4px solid #568296;
+        display: table-cell;
+        text-align: center;
+        vertical-align: top;
+        width: 15%;
+        h3 {
+            color: #48677b;
+            font-size: 34px;
+            line-height: 34px;
+            font-weight: normal;
+            margin: 0;
+            font-family: 'Lato', arial;
+        }
+        h5 {
+            color: #48677b;
+            font-size: 76px;
+            line-height: 76px;
+            margin: 0;
+            font-family: 'Lato', arial;
+        }
+        h6 {
+            background: #48677b none repeat scroll 0 0;
+            color: #fff;
+            font-size: 27px;
+            font-weight: normal;
+            height: 40px;
+            line-height: 40px;
+            margin: 0 auto;
+            width: 55%;
+            font-family: 'Lato', arial;
+        }
+    }
+    .informacion {
+        display: table-cell;
+        padding-left: 1%;
+        width: 85%;
+    }
+    .informacion {
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                list-style: outside none none;
+                min-height: 35px;
+            }
+        }
+    }
+    .ihora {
+        background: #568296 none repeat scroll 0 0;
+        color: #fff;
+        float: left;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 25px;
+        text-align: center;
+        width: 100%;
+    }
+    .idetalle {
+        color: #8195a1;
+        line-height: 25px;
+        margin-left: 8px;
+        min-height: 25px;
+    }
+    .informacion {
+        ul {
+            li {
+                small {
+                    color: #8195a2;
+                    float: left;
+                    font-size: 15px;
+                    line-height: 1;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    td {
+        vertical-align: top;
+    }
+    .days__table__row {
+        border-bottom: 10px solid white;
+        .days__table__hour {
+            text-align: center;
+            width: 100px;
+            color: $table;
+            @include font-size(15px);
+            line-height: cr(18px);
+            font-weight: bold;
+            border-bottom: 3px solid $table;
+        }
+        .days__table__detail {
+            @include font-size(15px);
+            line-height: cr(18px);
+            padding-left: 10px;
+            color: $gray;
+            .item {
+                margin-bottom: 10px;
+                p {
+                    margin-bottom: 4px;
+                }
+                .item__author {
+                    color: rgba($gray, .7);
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .days__table__third {
+            width: (100% / 3);
+            padding: 0 5px;
+        }
+        .days--background {
+            background: rgba($table, .2);
+            padding: 5px 0;
+            p {
+                line-height: cr(20px);
+                margin-bottom: 20px;
+            }
+        }
+        .days__parallel {
+            .item {
+                margin-bottom: 30px;
+            }
+        }
+        .days__table__sub-title {
+            background: #568296 none repeat scroll 0 0;
+            color: #fff;
+            @include font-size(15px);
+            padding: 5px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    }
+    .informacion {
+        table {
+            width: 98%;
+            td {
+                vertical-align:top;
+                small {
+                    color: #6c7d86;
+                    display: block;
+                    font-size: 13px;
+                    line-height: 15px;
+                    margin-top: 2px;
+                    font-family: 'Lato', arial;
+                }
+            }
+        }
+    }
+    .tcontenido {
+        p {
+            color: #8295a1;
+            font-size: 15px;
+            line-height: 115%;
+        }
+    }
+}

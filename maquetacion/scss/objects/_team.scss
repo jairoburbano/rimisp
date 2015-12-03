@@ -1,0 +1,51 @@
+/*------------------------------------*\
+$TEAM
+\*------------------------------------*/
+.team-content {
+}
+.team {
+    position: relative;
+    padding: 15px 15px 15px 0;
+//    border-bottom: 2px solid #c7c7c7;
+    width: 100%;
+    /*&--image {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        position: absolute;
+        top: 15px;
+        left: 0;
+        background: $gray;
+        img {
+            width: 100%;
+            transition: all 300ms;
+            opacity: .7;
+        }
+        &:hover {
+            img {
+                opacity: 1;
+            }
+        }
+    }*/
+    &--text {
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 5px;
+        display: block;
+        h2, h3 {
+            margin-bottom: 10px;
+            a {
+                color: $principal;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        p {
+            margin: 0 !important;
+        }
+    }
+    &:last-child {
+        border-bottom: none;
+    }
+}

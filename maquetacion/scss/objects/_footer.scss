@@ -1,0 +1,80 @@
+/*------------------------------------*\
+$FOOTER
+\*------------------------------------*/
+.footer {
+    width: 100%;
+    height: 130px;
+//    background: rgba(112,112,112, 0.2);
+    padding: 20px 0;
+    box-sizing: border-box;
+    margin-top: -130px;
+    border-top: 2px solid $link60;
+    overflow: hidden;
+    @include less-than(tablet) {
+        height: auto;
+    }
+    .three-cols {
+        width: (100%/3);
+        float: left;
+        height: 90px;
+        overflow: hidden;
+        @include less-than(tablet) {
+            width: 100% !important;
+            border-bottom: 1px solid $gray20;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            height: auto;
+        }
+        &.col-border {
+            border-right: 2px solid #a5a5a5;
+        }
+        .logo-foo {
+            height: 60px;
+        }
+        &.contact {
+            width: 50%;
+        }
+        h4 {
+            text-align: center;
+        }
+        img {
+            margin: auto;
+        }
+        .content-cols {
+            text-align: center;
+            &--half {
+                width: 50%;
+                float: left;
+                padding: 0 10px;
+                border-right: 2px solid $principal10;
+                text-align: right;
+                font-size: cr(14px);
+                &:last-child {
+                    border-right: none;
+                    text-align: left;
+                }
+                p {
+                    margin-bottom: 0;  
+                }
+            }
+            &.rss {
+                a {
+                    height: 38px;
+                    width: 38px;
+                    border-radius: 38px;
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0 4px;
+                }
+            }
+        }
+    }
+}
+.small-foo {
+    max-width: 80%;
+    margin: auto;
+    padding: 10px 15px;
+    font-family: lato;
+    font-size: 14px;
+    line-height: 16px;
+}

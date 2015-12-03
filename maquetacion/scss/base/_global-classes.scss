@@ -1,0 +1,14 @@
+.wrap {
+	margin: auto;
+	max-width: cr(980px);
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        float: none;
+        clear: both;
+    }
+    &.container {
+        margin-bottom: 40px;
+    }
+}

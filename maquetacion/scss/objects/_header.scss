@@ -1,0 +1,169 @@
+/*------------------------------------*\
+$HEADER
+\*------------------------------------*/
+.header {
+    position: relative;
+    z-index: $level10;
+    margin-bottom: 20px;
+    display: block;
+    padding-top: 20px;
+    font-size: cr(16px);
+    .logo {
+        height: 90px;
+        display: block;
+        float: left;
+        margin-left: 15px;
+        img {
+            height: 90px !important;
+            margin-top: 0 !important;
+        }
+        @include less-than(tablet) {
+            margin: 0;
+            height: auto;
+            img {
+                width: 100%;
+                height: auto !important;
+            }
+        }
+    }
+    .menu {
+        width: 100%;
+        &--top {
+            height: 90px;
+            @include less-than(tablet) {
+                height: auto;
+            }
+            &__left, &__right {
+                float: left;
+                display: block;
+                height: 90px;
+            }
+            &__right {
+                float: right;
+                img {
+                    margin-top: 0 !important;
+                    height: 100% !important;
+                }
+                @include less-than(tablet) {
+                    display: none;
+                }
+            }
+            &__left {
+                img {
+                    margin-left: 10px;
+                }
+            }
+            img {
+                float: left;
+                height: 100%;
+                &:last-child {
+                    height: 50px;
+                    margin-top: 30px;
+                }
+                &.rimisp{
+                    float: right;
+                }
+            }
+        }
+        &--nav {
+            height: 40px;
+            width: 100%;
+            background: $gray20;
+            display: table;
+            table-layout: fixed;
+            margin-top: 20px;
+            .menu-mobile {
+                display: none;
+                @include less-than(tablet) {
+                    display: block;
+                    width: 100%;
+                    height: 50px;
+                    background: $gray20;
+                    text-align: center;
+                    line-height: cr(50px);
+                    color: $principal;
+                    margin: 0;
+                    &:hover {
+                        background: $link60;
+                        color: $hover;
+                    }
+                }
+            }
+            .content-mobile{
+                width: 100%;
+                display: table;
+                table-layout: fixed;
+                @include less-than(tablet) {
+                    display: none;
+                }
+            }
+            .menu-item {
+                display: table-cell;
+                line-height: cr(40px);
+                text-align: center;
+                color: $principal;
+                height: 40px;
+                position: relative;
+                transition: all 300ms;
+                text-transform: uppercase;
+                font-weight: 400 !important;
+                font-family: 'Oswald', Helvetica, Arial, sans-serif;
+                @include less-than(tablet) {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+                &:hover, &.current-menu-item, &.here {
+                    background: $link60;
+                    color: $hover;
+                }
+                &:hover {
+                    .dropdown--list {
+                        height: 300%;
+                    }
+                }
+                &.small-one {
+                    &:hover {
+                        .dropdown--list {
+                            height: 200%;
+                        }
+                    }
+                }
+                .dropdown, span {
+                    display: block;
+                    cursor: pointer;
+                    line-height: cr(40px);
+                    &--list {
+                        display: block;
+                        height: 0;
+                        overflow: hidden;
+                        transition: all 400ms;
+                        position: absolute;
+                        top: 40px;
+                        background: $link60;
+                        width: auto;
+                        text-transform: none;
+                        a {
+                            display: block;
+                            padding: 0 20px;
+                            text-align: left;
+                            color: $hover;
+                            min-width: 200px;
+                            &:hover, &.current_page_item {
+                                background: $link;
+                            }
+                        }
+                        @include less-than(tablet) { 
+                            width: 100%;
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                            height: auto !important;
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

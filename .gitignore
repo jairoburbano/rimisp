@@ -1,0 +1,47 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Archivos de projecto de sublime #
+*.sublime-project
+*.sublime-workspace
+
+# cache de sass dentro del tema y la maquetación #
+wp-content/themes/[[tema]]/.sass-cache/
+maquetacion/.sass-cache/
+maquetacion/bower_components/
+
+
+# Cache de codekit #
+wp-content/themes/[[tema]]/.codekit-cache/
+config.codekit
+
+# Descargas de NPM #
+node_modules
+
+# Carpetas de Wordpress que no necesitamos #
+wordpress/wp-content/upgrade/
+wordpress/wp-content/uploads/
+wordpress/wp-content/plugins/
+wordpress/wp-content/backup-db/
+wordpress/wp-content/advanced-cache.php
+wordpress/wp-content/wp-cache-config.php
+wordpress/wp-content/blogs.dir/
+wordpress/wp-content/uploads/
+*.log
+wordpress/wp-content/cache/
+wordpress/wp-content/backups/
+sitemap.xml.gz
+wordpress/wp-include
+wordpress/wp-admin
+
+# Configuración de ambiente local de desarrollo #
+
+config/env/

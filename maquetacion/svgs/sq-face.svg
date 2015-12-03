@@ -1,0 +1,16 @@
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In  -->
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="42px" height="42px" viewBox="0 0 42 42" enable-background="new 0 0 42 42" xml:space="preserve">
+<defs>
+	<symbol  id="facebook" viewBox="-5.83 -12 11.66 24">
+		<path id="facebook_2_" class="icon-paint" d="M-2.85-12v11.26h-2.98v4.05h2.98c0,0,0,1.66,0,3.46C-2.85,9.5-1.1,12,2.96,12
+			c1.64,0,2.85-0.16,2.85-0.16l-0.1-3.79c0,0-1.24,0.01-2.59,0.01c-1.46,0-1.7-0.67-1.7-1.79c0-0.88,0,1.88,0-2.96h4.4L5.64-0.74
+			H1.43V-12H-2.85z"/>
+	</symbol>
+</defs>
+<g>
+	
+		<use xlink:href="#facebook"  width="11.66" height="24" x="-5.83" y="-12" transform="matrix(0.75 0 0 -0.75 21.787 20.998)" overflow="visible"/>
+</g>
+</svg>

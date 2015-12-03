@@ -1,0 +1,236 @@
+/*------------------------------------*\
+$INDEX
+\*------------------------------------*/
+.slider {
+    position: relative;
+}
+.slide-content {
+    position: relative;
+}
+.slidefade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    z-index: $level1;
+    .flex-direction-nav {
+        display: none;
+    }
+    @include less-than(tablet) {
+        height: auto;
+        position: relative;
+        .slide--item {
+            height: auto !important;   
+        }
+    }
+}
+.slide {
+    padding: 0;
+    list-style: none;
+    &--item {
+        width: 100%;
+        height: 300px;
+        float: left;
+        position: relative;
+        margin: 0;
+        @include less-than(tablet) {
+            height: auto;
+        }
+        &--image {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+        }
+        &--text {
+            width: 100%;
+            position: absolute;
+            right: 0;
+            bottom: 20px;
+            transition: all 300ms;
+            background: rgba(0,0,0,0.1);
+            background: -moz-linear-gradient(left, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.8) 60%, rgba(0,0,0,0.8) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0.1)), color-stop(60%, rgba(0,0,0,0.8)), color-stop(100%, rgba(0,0,0,0.8)));
+            background: -webkit-linear-gradient(left, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.8) 60%, rgba(0,0,0,0.8) 100%);
+            background: -o-linear-gradient(left, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.8) 60%, rgba(0,0,0,0.8) 100%);
+            background: -ms-linear-gradient(left, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.8) 60%, rgba(0,0,0,0.8) 100%);
+            background: linear-gradient(to right, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.8) 60%, rgba(0,0,0,0.8) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+            text-align: right;
+            //            font-family: 'Oswald', Helvetica, Arial, sans-serif;
+            @include less-than(tablet) {
+                bottom: 0px;
+                position: relative;
+            }
+            a  {
+                padding: 15px 30px;
+                color: $hover;
+                display: block;
+                font-size: cr(28px);
+                font-weight: 400 !important;
+                @include less-than(tablet) {
+                    font-size: cr(18px);
+                }
+            }
+        }
+    }
+}
+.custom-controls-container {
+    .flex-control-nav {
+        position: absolute;
+        bottom: 25px;
+        left: 20px;
+        padding: 0;
+        z-index: $level2;
+        @include less-than(tablet) {
+            bottom: -55px;
+        }
+        ol {
+            background-color: transparent;
+            padding: 0;
+        }
+        li {
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            overflow: hidden;
+            margin: 0 5px;
+            cursor: pointer;
+            a {
+                width: 10px;
+                height: 10px;
+                display: block;
+                color: $gray;
+                background: $gray;
+                transition: all 300ms;
+                &.flex-active {
+                    background: $hover;
+                    color: $hover;
+                }
+            }
+        }
+    }
+    .flex-direction-nav {
+        list-style: none;
+        padding: 0;
+        .flex-nav-prev, .flex-nav-next {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translate(0,-50%);
+            z-index: $level2;
+            width: 50px;
+            height: 50px;
+            background: #000;
+            border-radius: 5px;
+            overflow: hidden;
+            opacity: .5;
+            transition: all 300ms;
+            &:hover {
+                opacity: .8;
+            }
+            a {
+                height: 50px;
+                width: 50px;
+                display: block;
+                &::after {
+                    content: '';
+                    color: $gray;
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: url(../img/arrow.svg) center center no-repeat;
+                    background-size: 20px 20px;
+                    text-align: center;
+                    line-height: cr(50px);
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        .flex-nav-next {
+            left: auto;
+            right: 15px;
+            a {
+                &::after {
+                    transform: rotate(0);
+                }
+            }
+        }
+    }
+}
+.creditos {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    opacity: .3;
+    a {
+    color: white;
+    font-size: cr(10px);
+    font-weight: 300 !important;
+    }
+}
+//Cotenido
+.content {
+    width: 100%;
+    &--half-cols {
+        width: 50%;
+        float: left;
+        border-right: 2px solid $principal10;
+        padding-right: 15px;
+        &:last-child {
+            border-right: none;
+            padding-right: 0;
+            padding-left: 15px;
+        }
+    }
+    &--third-cols {
+        width: 70%;
+        float: left;
+        padding-right: 15px;
+        @include less-than(tablet) {
+            width: 100%;
+            padding: 0;
+        }
+    }
+    &--quarter-cols {
+        width: 30%;
+        padding-left: 15px;
+        float: right;
+    }
+}
+.theme-title {
+    background:$secundario;
+    padding: 0 15px;
+    height: 40px;
+    margin-bottom: 15px;
+    h2 {
+        color: $hover;
+        line-height: cr(40px);
+    }
+}
+ol.themes {
+    list-style: none;
+    padding: 15px 0x;
+    background: $gray20;
+    li {
+        font-weight: 400;
+        padding: 5px 15px;
+        background: #c1c1c1;
+        color: $principal;
+        &:nth-child(2n) {
+            background: $gray20;
+        }
+    }
+}
+/*overview*/
+.specialul {
+    max-width: 70%;
+    margin: 25px auto;
+    display: block;
+}

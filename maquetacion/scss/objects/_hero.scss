@@ -1,0 +1,105 @@
+/*------------------------------------*\
+$HERO
+\*------------------------------------*/
+/*.glance { 
+    table {
+        width: 100%;
+        display: block;
+        tbody {
+            width: 100%;
+            display: block;
+        }
+        thead {
+            width: 100%;
+            display: block;
+            tr {
+                td {
+                    height: 40px;
+                    background: #f9f9f9;
+                    line-height: cr(40px);
+                    width: 30%;
+                    display: block;
+                    float: left;
+                    border-top: 1px solid #ddd;
+                    color: #666;
+                    background: #fff !important;
+                    font-weight: 600;
+                    &:last-child {
+                        width: 70%;
+                    }
+                }   
+            }
+        }
+        tr {
+            width: 100%;
+            text-align: center;
+            display: block;
+            &::after {
+                content: '';
+                display: block;
+                float: none;
+                clear: both;
+            }
+            thead td {
+                height: 40px;
+                background: #f9f9f9;
+                line-height: cr(40px);
+            }
+            td, thead td {
+                width: 30%;
+                display: block;
+                float: left;
+                border-top: 1px solid #ddd;
+                color: #666;
+                background: #fff;
+                &:last-child {
+                    width: 70%;
+                }
+            }
+            td {
+                height: 30px;
+                line-height: cr(30px);
+            }
+            &:nth-child(2n+1) {
+                td {
+                    background: #f9f9f9;
+                }
+            }
+        }
+    }
+}*/
+.three-cols {
+    width: (100%/3);
+    display: block;
+    float: left;
+    @include less-than(tablet) {
+        width: 100%;
+    }
+}
+/*Contact*/ 
+.contact {
+    &:after {
+        content: '';
+        display: block;
+        float: none;
+        clear: both;
+    }
+    .three-cols {
+        text-align: center;
+        strong {
+            margin-bottom: 10px;
+            display: block;
+            font-weight: 600 !important;
+        }
+        a {
+            display: block;
+        }
+        &:nth-child(2) {
+            border-right: 1px solid $gray;
+            border-left: 1px solid $gray;
+            @include less-than(tablet) {
+                border: none !important;
+            }
+        }
+    }
+}

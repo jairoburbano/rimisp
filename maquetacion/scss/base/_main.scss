@@ -1,0 +1,155 @@
+/*------------------------------------*\
+$MAIN
+\*------------------------------------*/
+@media print {
+    a:after, a:link:after, a:visited:after {
+        content: "";
+        display: none;
+    }
+}
+html, body {
+    height: 100%;
+    font-family: 'Lato', arial;
+    color: $gray;
+    font-size: cr(16px);
+    line-height: cr(20px);
+    font-weight: 300;
+}
+.lato, .content {
+    font-family: 'Lato', arial;
+    font-size: cr(16px) !important;
+    margin-bottom: 0;
+}
+.full-height {
+    min-height: 100%;
+    padding-bottom: 132px;
+}
+.mtop {
+    margin-top: 50px;
+}
+.mbot {
+    margin-bottom: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: $principal;
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    font-weight: 400 !important;
+    &.regular {
+        font-weight: 400;
+    }
+}
+h1 {
+    font-size: cr(28px);
+    line-height: cr(32px);
+}
+h2 {
+    font-size: cr(20px);
+    line-height: cr(24px);
+}
+h3 {
+    font-size: cr(18px);
+    line-height: cr(22px);
+}
+h4 {
+    font-size: cr(14px);
+    line-height: cr(18px);
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+ul {
+    list-style: disc;
+    padding-left: 30px;
+    font-size: cr(14px);
+    li {
+        margin: 10px 0;
+    }
+}
+a {
+    transition: all 300ms;
+    color: #4384c4;
+    font-weight: 600 !important;
+    &:hover {
+        color: $secundario130;
+    }
+}
+p {
+    margin-bottom: 10px;
+    &.date {
+        font-size: cr(10px);
+        line-height: cr(14px);
+    }
+    &.special {
+        font-size: cr(18px);
+        line-height: cr(20px);
+        margin-bottom: 0;
+    }
+}
+hr {
+    border: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    padding: 0;
+    margin: 15px 0;
+}
+svg {
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    transition: all 300ms;
+    fill: $hover;
+}
+.icon {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+//Article default
+article {
+    padding: 15px;
+    p {
+        font-size: cr(14px);
+    }
+    .title {
+        width: 100%;
+        border-bottom: 2px solid $secundario;
+        display: block;
+        margin-bottom: 20px;
+        min-height: 34px;
+        padding-bottom: 10px;
+        position: relative;
+        h1 {
+            margin-bottom: 0;
+        }
+        .small {
+            font-size: cr(24px);
+        }
+    }
+}
+//Two Columns
+.half-cols {
+    width: 50%;
+    float: left;
+}
+
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+#map {
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin:0 1em 1em 0
+}
+.content-text {
+    margin: 15px 0 20px 0;
+}

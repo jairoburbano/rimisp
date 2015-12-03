@@ -1,0 +1,18 @@
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In  -->
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="42px" height="42px" viewBox="0 0 42 42" enable-background="new 0 0 42 42" xml:space="preserve">
+<defs>
+	<symbol  id="youtube" viewBox="-11 -8.42 22 16.84">
+		<path class="icon-paint" d="M10.72,4.52l-0.01,0.07c-0.03,0.26-0.1,0.51-0.19,0.74h0.01c-0.35,1.48-2.01,2.61-4.08,2.8l-0.1,0.01
+			c-4.22,0.37-8.48,0.37-12.7,0l-0.1-0.01c-2.07-0.18-3.73-1.32-4.08-2.8h0c-0.09-0.24-0.16-0.48-0.19-0.74l-0.01-0.07
+			c-0.37-3.02-0.37-6.07,0-9.09l0.01-0.07c0.05-0.38,0.16-0.74,0.32-1.07C-9.87-7-8.34-7.97-6.44-8.13l0.1-0.01
+			c4.22-0.37,8.48-0.37,12.7,0l0.1,0.01c1.95,0.17,3.52,1.19,3.99,2.54c0.13,0.3,0.23,0.62,0.27,0.95l0.01,0.07
+			C11.09-1.55,11.09,1.5,10.72,4.52z M-4.11-4.66v9.33L5.22,0L-4.11-4.66z"/>
+	</symbol>
+</defs>
+<g>
+	
+		<use xlink:href="#youtube"  width="22" height="16.84" x="-11" y="-8.42" transform="matrix(0.8182 0 0 -0.8182 21.287 20.1256)" overflow="visible"/>
+</g>
+</svg>
