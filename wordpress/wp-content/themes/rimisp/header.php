@@ -18,7 +18,7 @@ include 'functions.php';
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" id="mh-google-fonts-css" href="//fonts.googleapis.com/css?family=Oswald:400,700,300|PT+Serif:400,400italic,700,700italic" type="text/css" media="all">
         <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.min.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.min.css?random=<?php echo rand(1,100000); ?>">
         <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr.js"></script>
         <style>
             .btn--download {
