@@ -3,9 +3,15 @@ $TABLE
 \*------------------------------------*/
 .cont__special {
     h3 {
-        width: 50%;
+        min-width: 50%;
         border-bottom: 3px solid $table;
-        padding-bottom: 5px;   
+        padding-bottom: 5px; 
+        color: #000;
+        display: inline-block;
+        clear: both;
+    }
+    ul {
+        font-weight: bold;
     }
 }
 .days__title {
@@ -24,8 +30,9 @@ $TABLE
     .subject {
         @include font-size(24px);
         text-transform: uppercase;
-        color: rgba($table, .7);
+        color: $table;
         font-family: 'Oswald', Helvetica, Arial, sans-serif;
+        margin-left: 5px;
     }
 }
 .days__table {
@@ -141,6 +148,10 @@ $TABLE
     }
     .days__table__row {
         border-bottom: 10px solid white;
+        font-weight: bold;
+        strong {
+            color: #000;
+        }
         .days__table__hour {
             text-align: center;
             width: 100px;
@@ -151,7 +162,7 @@ $TABLE
             border-bottom: 3px solid $table;
         }
         .days__table__detail {
-            @include font-size(15px);
+            font-size: cr(15px) !important;
             line-height: cr(18px);
             padding-left: 10px;
             color: $gray;
@@ -161,9 +172,15 @@ $TABLE
                     margin-bottom: 4px;
                 }
                 .item__author {
-                    color: rgba($gray, .7);
                     margin-bottom: 10px;
                 }
+            }
+        }
+        .days__plenary {
+            background: rgba($table, .2);
+            padding: 5px;
+            p {
+                margin-bottom: 0;
             }
         }
         .days__table__third {
@@ -190,6 +207,9 @@ $TABLE
             padding: 5px;
             margin-bottom: 10px;
             font-weight: bold;
+            strong {
+                color: white;
+            }
         }
     }
     .informacion {

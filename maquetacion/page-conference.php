@@ -661,9 +661,11 @@ include 'header.php'; ?>
                             <table>
                                 <tbody>
                                     <tr class="days__table__row">
-                                        <div class="days__table__detail">
-                                            <p><strong>Discussion Groups</strong></p>
-                                        </div>
+                                        <td colspan="3">
+                                            <div class="days__table__detail">
+                                                <p><strong>Discussion Groups</strong></p>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr class="days__table__row">
                                         <td class="days__table__third">
