@@ -15,12 +15,26 @@ $TEAM
     margin-bottom: 15px;
     width: 100%;
     padding-right: 15px;
-    border-bottom: 2px solid $principal10;
+    overflow: hidden;
+    &::after {
+        background: $principal10;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: calc(100% - 15px);
+        height: 1px;
+    }
     &--title {
-        width: 100%;
-        padding: 10px 0;
-        margin-bottom: 15px;
-        border-bottom: 2px solid $link60;
+        h2 {
+            width: 100%;
+            padding: 10px 0;
+            margin-bottom: 15px;
+            border-bottom: 2px solid $link60;
+            font-size: cr(18px);
+            line-height: cr(18px);
+            text-transform: none;
+        }
     }
     &--text {
         float: left;
@@ -31,9 +45,13 @@ $TEAM
         width: 100%;
         &--icon {
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 0;
+            padding: 5px 0;
             a {
                 margin-left: 5px;
+                font-size: cr(18px);
+                line-height: cr(30px);
+                color: rgba($gray, .6);
                 &::after {
                     content: '-';
                     color: $principal;
@@ -65,17 +83,21 @@ $TEAM
             right: 0;
             top: 50%;
             transform: translate(0, -50%);
-            height: 44px;
+            height: 30px;
             .btn {
                 position: absolute;
                 right: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
-                padding: 10px 20px;
+                height: 30px;
+                padding: 0 20px;
                 text-align: center;
-                color: $gray;
+                color: rgba($gray, .6);
+                background: rgba($gray, .1);
+                border-radius: 15px;
+                line-height: cr(28px);
                 &__border {
-                    border: 2px solid $gray;
+                    border: 1px solid rgba($gray, .6);
                 }
                 &:hover {
                     background: $gray;
@@ -155,18 +177,18 @@ $TEAM
                     }
                 }
             }
-                .icon {
-                    width: 20px;
-                    height: 34px;
-                    float: right;
-                    margin-right: 5px;
-                    position: absolute;
-                    right: 20px;
-                    &--search {
-                        background: url(../img/lupe.svg) center center no-repeat;
-                        background-size: 18px 18px;
-                    }
+            .icon {
+                width: 20px;
+                height: 34px;
+                float: right;
+                margin-right: 5px;
+                position: absolute;
+                right: 20px;
+                &--search {
+                    background: url(../img/lupe.svg) center center no-repeat;
+                    background-size: 18px 18px;
                 }
+            }
         }
     }
     .select {
