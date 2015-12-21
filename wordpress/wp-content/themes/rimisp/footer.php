@@ -45,6 +45,6 @@
         </div>
     </div>
 </footer>
-<script src="<?php echo get_template_directory_uri(); ?>/js/app.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/app.min.js?random=<?php echo rand(1,100000); ?>"></script>
 </body>
 </html>

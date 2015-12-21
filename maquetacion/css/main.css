@@ -1305,9 +1305,15 @@ ol.themes {
 /*------------------------------------*$TABLE
 \*------------------------------------*/
 .cont__special h3 {
-  width: 50%;
+  min-width: 50%;
   border-bottom: 3px solid #387789;
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  color: #000;
+  display: inline-block;
+  clear: both; }
+
+.cont__special ul {
+  font-weight: bold; }
 
 .days__title {
   width: 50%;
@@ -1326,8 +1332,9 @@ ol.themes {
     font-size: 24px;
     font-size: 1.5rem;
     text-transform: uppercase;
-    color: rgba(56, 119, 137, 0.7);
-    font-family: 'Oswald', Helvetica, Arial, sans-serif; }
+    color: #387789;
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    margin-left: 5px; }
 
 .days__table #cabecera {
   border-bottom: 5px solid #49677b;
@@ -1426,7 +1433,10 @@ ol.themes {
   vertical-align: top; }
 
 .days__table .days__table__row {
-  border-bottom: 10px solid white; }
+  border-bottom: 10px solid white;
+  font-weight: bold; }
+  .days__table .days__table__row strong {
+    color: #000; }
   .days__table .days__table__row .days__table__hour {
     text-align: center;
     width: 100px;
@@ -1437,8 +1447,7 @@ ol.themes {
     font-weight: bold;
     border-bottom: 3px solid #387789; }
   .days__table .days__table__row .days__table__detail {
-    font-size: 15px;
-    font-size: 0.9375rem;
+    font-size: 0.9375rem !important;
     line-height: 1.125rem;
     padding-left: 10px;
     color: #444; }
@@ -1447,8 +1456,12 @@ ol.themes {
       .days__table .days__table__row .days__table__detail .item p {
         margin-bottom: 4px; }
       .days__table .days__table__row .days__table__detail .item .item__author {
-        color: rgba(68, 68, 68, 0.7);
         margin-bottom: 10px; }
+  .days__table .days__table__row .days__plenary {
+    background: rgba(56, 119, 137, 0.2);
+    padding: 5px; }
+    .days__table .days__table__row .days__plenary p {
+      margin-bottom: 0; }
   .days__table .days__table__row .days__table__third {
     width: 33.3333333333%;
     padding: 0 5px; }
@@ -1468,6 +1481,8 @@ ol.themes {
     padding: 5px;
     margin-bottom: 10px;
     font-weight: bold; }
+    .days__table .days__table__row .days__table__sub-title strong {
+      color: white; }
 
 .days__table .informacion table {
   width: 98%; }

@@ -69,8 +69,29 @@
             });
         }
     }
+    function tabletTitleHeight() {
+        var item = $('.days__table__third');
+        item.each(function() {
+            var subtitle = $('.days__table__sub-title');
+            // Get an array of all element heights
+            var elementHeights = subtitle.map(function() {
+                return $(this).height();
+            }).get();
+
+            // Math.max takes a variable number of arguments
+            // `apply` is equivalent to passing each height as an argument
+            var maxHeight = Math.max.apply(null, elementHeights);
+
+            // Set each height to the max height
+            subtitle.height(maxHeight);
+        });
+    }
     selectores();
     initSlide();
     letter();
     menuMobile();
+    tabletTitleHeight();
+    $(window).resize(function() {
+        tabletTitleHeight();
+    });
 })(jQuery);
