@@ -84,11 +84,14 @@ $TEAM
             top: 50%;
             transform: translate(0, -50%);
             height: 30px;
+            display: flex;
+            flex-flow: row wrap;
+            &.twice--group {
+                border-radius: 15px;
+                overflow: hidden;
+                border: 1px solid rgba($gray, .6);
+            }
             .btn {
-                position: absolute;
-                right: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
                 height: 30px;
                 padding: 0 20px;
                 text-align: center;
@@ -96,6 +99,23 @@ $TEAM
                 background: rgba($gray, .1);
                 border-radius: 15px;
                 line-height: cr(28px);
+                &.twice {
+                    border: none;
+                    border-radius: 0;
+                    &:first-child {
+                        position: relative;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translate(0, -50%);
+                            height: 60%;
+                            width: 1px;
+                            background: rgba($gray, .6);
+                        }
+                    }
+                }
                 &__border {
                     border: 1px solid rgba($gray, .6);
                 }

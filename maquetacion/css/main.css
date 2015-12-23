@@ -1107,14 +1107,18 @@ ol.themes {
       -webkit-transform: translate(0, -50%);
           -ms-transform: translate(0, -50%);
               transform: translate(0, -50%);
-      height: 30px; }
+      height: 30px;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
+      .item-resource--text .button.twice--group {
+        border-radius: 15px;
+        overflow: hidden;
+        border: 1px solid rgba(68, 68, 68, 0.6); }
       .item-resource--text .button .btn {
-        position: absolute;
-        right: 50%;
-        top: 50%;
-        -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
         height: 30px;
         padding: 0 20px;
         text-align: center;
@@ -1122,6 +1126,22 @@ ol.themes {
         background: rgba(68, 68, 68, 0.1);
         border-radius: 15px;
         line-height: 1.75rem; }
+        .item-resource--text .button .btn.twice {
+          border: none;
+          border-radius: 0; }
+          .item-resource--text .button .btn.twice:first-child {
+            position: relative; }
+            .item-resource--text .button .btn.twice:first-child:after {
+              content: '';
+              position: absolute;
+              right: 0;
+              top: 50%;
+              -webkit-transform: translate(0, -50%);
+                  -ms-transform: translate(0, -50%);
+                      transform: translate(0, -50%);
+              height: 60%;
+              width: 1px;
+              background: rgba(68, 68, 68, 0.6); }
         .item-resource--text .button .btn__border {
           border: 1px solid rgba(68, 68, 68, 0.6); }
         .item-resource--text .button .btn:hover {

@@ -26,8 +26,9 @@ include 'header.php'; ?>
                     </div>
                     <div class="item-resource--text clearfix">
                         <p class="item-resource--text--icon"><a href="#" title="Titulo">Author</a></p>
-                        <div class="button">
-                            <a href="#" title="Title documente" class="btn btn__border">Download</a>
+                        <div class="button twice--group">
+                            <a href="#" title="Title documente" class="btn btn__border twice">Word</a>
+                            <a href="#" title="Title documente" class="btn btn__border twice">PDF</a>
                         </div>
                     </div>
                 </div>
