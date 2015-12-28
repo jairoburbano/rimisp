@@ -1225,7 +1225,8 @@ ol.themes {
     width: 100%;
     line-height: 2.125rem;
     background: #eee;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    position: relative; }
     .sidebar .select--title {
       height: 34px;
       padding: 0 15px;
@@ -1253,10 +1254,22 @@ ol.themes {
       .sidebar .select.here .select--title::before {
         opacity: 0; }
     .sidebar .select--items {
-      display: none;
       font-family: Arial;
       max-height: 300px;
-      overflow-y: auto; }
+      overflow-y: auto;
+      position: absolute;
+      width: 100%;
+      height: 34px;
+      left: 0;
+      top: 0;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      font-weight: 500;
+      padding: 0 5px; }
       .sidebar .select--items--item {
         padding: 5px 15px;
         display: block;
@@ -1277,9 +1290,11 @@ ol.themes {
   margin: 5px;
   position: relative;
   z-index: 1000; }
-  .letter-dropdown.active span {
-    background: #7997a4;
-    color: #eee; }
+  .letter-dropdown.active {
+    z-index: 1100; }
+    .letter-dropdown.active span {
+      background: #7997a4;
+      color: #eee; }
 
 .letter-dropdown-button {
   width: 25px;
