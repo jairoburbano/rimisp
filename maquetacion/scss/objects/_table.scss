@@ -14,6 +14,25 @@ $TABLE
         font-weight: bold;
     }
 }
+.btn-download {
+    color: #464646;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    display: block;
+    border: 2px solid #7997A4;
+    text-align: center;
+    width: 250px;
+    line-height: 30px;
+    padding: 5px;
+    float: right;
+    transition: all 300ms;
+    background: #eee;
+    color: #34677c; 
+}
+.btn-download:hover {
+    background: #7997A4 none repeat scroll 0% 0%;
+    color: #EEE;
+}
 .days__title {
     width: 50%;
     border-bottom: 3px solid $table;
@@ -149,9 +168,6 @@ $TABLE
     .days__table__row {
         border-bottom: 10px solid white;
         font-weight: bold;
-        strong {
-            color: #000;
-        }
         .days__table__hour {
             text-align: center;
             width: 100px;
@@ -165,13 +181,14 @@ $TABLE
             font-size: cr(15px) !important;
             line-height: cr(18px);
             padding-left: 10px;
-            color: $gray;
             .item {
                 margin-bottom: 10px;
                 p {
                     margin-bottom: 4px;
                 }
                 .item__author {
+                    color: #000;
+                    font-weight: normal;
                     margin-bottom: 10px;
                 }
             }

@@ -1605,22 +1605,43 @@ ol.themes {
   font-weight: bold; }
 
 /* line 17, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+.btn-download {
+  color: #464646;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  display: block;
+  border: 2px solid #7997A4;
+  text-align: center;
+  width: 250px;
+  line-height: 30px;
+  padding: 5px;
+  float: right;
+  transition: all 300ms;
+  background: #eee;
+  color: #34677c; }
+
+/* line 32, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+.btn-download:hover {
+  background: #7997A4 none repeat scroll 0% 0%;
+  color: #EEE; }
+
+/* line 36, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
 .days__title {
   width: 50%;
   border-bottom: 3px solid #387789;
   padding-bottom: 5px;
   margin-bottom: 15px; }
-  /* line 22, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+  /* line 41, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
   .days__title .number {
     font-size: 40px;
     font-size: 2.5rem;
     font-weight: bold; }
-  /* line 26, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+  /* line 45, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
   .days__title .month {
     font-size: 36px;
     font-size: 2.25rem;
     font-family: 'Oswald', Helvetica, Arial, sans-serif; }
-  /* line 30, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+  /* line 49, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
   .days__title .subject {
     font-size: 24px;
     font-size: 1.5rem;
@@ -1629,13 +1650,13 @@ ol.themes {
     font-family: 'Oswald', Helvetica, Arial, sans-serif;
     margin-left: 5px; }
 
-/* line 39, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+/* line 58, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
 .days__table #cabecera {
   border-bottom: 5px solid #49677b;
   display: table;
   padding: 1% 0;
   width: 100%; }
-  /* line 44, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+  /* line 63, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
   .days__table #cabecera h3 {
     color: #353535;
     display: table-cell;
@@ -1643,7 +1664,7 @@ ol.themes {
     line-height: 64px;
     width: 80%;
     font-family: 'Lato', arial; }
-  /* line 52, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+  /* line 71, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
   .days__table #cabecera h6 {
     color: #8195a1;
     font-size: 40px;
@@ -1653,23 +1674,23 @@ ol.themes {
     text-align: right;
     font-family: 'Lato', arial; }
 
-/* line 62, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+/* line 81, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
 .days__table #cuerpo {
   padding-top: 2%;
   width: 100%; }
 
-/* line 66, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+/* line 85, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
 .days__table .today {
   background: #dfe2e5 none repeat scroll 0 0; }
 
-/* line 69, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+/* line 88, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
 .days__table .ifecha {
   border-right: 4px solid #568296;
   display: table-cell;
   text-align: center;
   vertical-align: top;
   width: 15%; }
-  /* line 75, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+  /* line 94, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
   .days__table .ifecha h3 {
     color: #48677b;
     font-size: 34px;
@@ -1677,14 +1698,14 @@ ol.themes {
     font-weight: normal;
     margin: 0;
     font-family: 'Lato', arial; }
-  /* line 83, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+  /* line 102, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
   .days__table .ifecha h5 {
     color: #48677b;
     font-size: 76px;
     line-height: 76px;
     margin: 0;
     font-family: 'Lato', arial; }
-  /* line 90, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+  /* line 109, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
   .days__table .ifecha h6 {
     background: #48677b none repeat scroll 0 0;
     color: #fff;
@@ -1696,22 +1717,22 @@ ol.themes {
     width: 55%;
     font-family: 'Lato', arial; }
 
-/* line 102, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+/* line 121, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
 .days__table .informacion {
   display: table-cell;
   padding-left: 1%;
   width: 85%; }
 
-/* line 108, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+/* line 127, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
 .days__table .informacion ul {
   margin: 0;
   padding: 0; }
-  /* line 111, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+  /* line 130, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
   .days__table .informacion ul li {
     list-style: outside none none;
     min-height: 35px; }
 
-/* line 117, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+/* line 136, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
 .days__table .ihora {
   background: #568296 none repeat scroll 0 0;
   color: #fff;
@@ -1722,14 +1743,14 @@ ol.themes {
   text-align: center;
   width: 100%; }
 
-/* line 127, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+/* line 146, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
 .days__table .idetalle {
   color: #8195a1;
   line-height: 25px;
   margin-left: 8px;
   min-height: 25px; }
 
-/* line 136, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+/* line 155, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
 .days__table .informacion ul li small {
   color: #8195a2;
   float: left;
@@ -1737,18 +1758,15 @@ ol.themes {
   line-height: 1;
   width: 100%; }
 
-/* line 146, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+/* line 165, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
 .days__table td {
   vertical-align: top; }
 
-/* line 149, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+/* line 168, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
 .days__table .days__table__row {
   border-bottom: 10px solid white;
   font-weight: bold; }
-  /* line 152, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
-  .days__table .days__table__row strong {
-    color: #000; }
-  /* line 155, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+  /* line 171, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
   .days__table .days__table__row .days__table__hour {
     text-align: center;
     width: 100px;
@@ -1758,44 +1776,45 @@ ol.themes {
     line-height: 1.125rem;
     font-weight: bold;
     border-bottom: 3px solid #387789; }
-  /* line 164, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+  /* line 180, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
   .days__table .days__table__row .days__table__detail {
     font-size: 0.9375rem !important;
     line-height: 1.125rem;
-    padding-left: 10px;
-    color: #444; }
-    /* line 169, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+    padding-left: 10px; }
+    /* line 184, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
     .days__table .days__table__row .days__table__detail .item {
       margin-bottom: 10px; }
-      /* line 171, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+      /* line 186, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
       .days__table .days__table__row .days__table__detail .item p {
         margin-bottom: 4px; }
-      /* line 174, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+      /* line 189, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
       .days__table .days__table__row .days__table__detail .item .item__author {
+        color: #000;
+        font-weight: normal;
         margin-bottom: 10px; }
-  /* line 179, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+  /* line 196, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
   .days__table .days__table__row .days__plenary {
     background: rgba(56, 119, 137, 0.2);
     padding: 5px; }
-    /* line 182, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+    /* line 199, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
     .days__table .days__table__row .days__plenary p {
       margin-bottom: 0; }
-  /* line 186, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+  /* line 203, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
   .days__table .days__table__row .days__table__third {
     width: 33.33333%;
     padding: 0 5px; }
-  /* line 190, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+  /* line 207, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
   .days__table .days__table__row .days--background {
     background: rgba(56, 119, 137, 0.2);
     padding: 5px 0; }
-    /* line 193, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+    /* line 210, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
     .days__table .days__table__row .days--background p {
       line-height: 1.25rem;
       margin-bottom: 20px; }
-  /* line 199, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+  /* line 216, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
   .days__table .days__table__row .days__parallel .item {
     margin-bottom: 30px; }
-  /* line 203, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+  /* line 220, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
   .days__table .days__table__row .days__table__sub-title {
     background: #568296 none repeat scroll 0 0;
     color: #fff;
@@ -1804,17 +1823,17 @@ ol.themes {
     padding: 5px;
     margin-bottom: 10px;
     font-weight: bold; }
-    /* line 210, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+    /* line 227, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
     .days__table .days__table__row .days__table__sub-title strong {
       color: white; }
 
-/* line 216, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+/* line 233, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
 .days__table .informacion table {
   width: 98%; }
-  /* line 218, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+  /* line 235, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
   .days__table .informacion table td {
     vertical-align: top; }
-    /* line 220, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+    /* line 237, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
     .days__table .informacion table td small {
       color: #6c7d86;
       display: block;
@@ -1823,7 +1842,7 @@ ol.themes {
       margin-top: 2px;
       font-family: 'Lato', arial; }
 
-/* line 232, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
+/* line 249, C:/wamp/www/rimisp/maquetacion/scss/objects/_table.scss */
 .days__table .tcontenido p {
   color: #8295a1;
   font-size: 15px;
