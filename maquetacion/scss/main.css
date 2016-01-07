@@ -1273,14 +1273,20 @@ ol.themes {
     text-transform: none; }
     /* line 37, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
     .item-resource--title h2 a {
-      font-weight: normal;
+      font-weight: normal !important;
       color: #333;
       margin-right: 5px;
       transition: all 300ms; }
       /* line 42, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+      .item-resource--title h2 a::after {
+        content: ','; }
+      /* line 46, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+      .item-resource--title h2 a:last-child::after {
+        display: none; }
+      /* line 50, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
       .item-resource--title h2 a:hover {
         color: #34677c; }
-  /* line 48, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+  /* line 56, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
   .item-resource--text {
     float: left;
     overflow: hidden;
@@ -1288,7 +1294,7 @@ ol.themes {
     padding-right: 240px;
     position: relative;
     width: 100%; }
-    /* line 55, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+    /* line 63, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
     .item-resource--text--icon {
       display: block;
       margin-bottom: 0;
@@ -1296,25 +1302,25 @@ ol.themes {
       margin-left: 5px;
       font-size: 1.125rem;
       line-height: 1.875rem;
-      color: rgba(68, 68, 68, 0.6); }
-      /* line 64, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+      color: #333; }
+      /* line 72, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
       .item-resource--text--icon:last-child::after {
         opacity: 0; }
-    /* line 69, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+    /* line 77, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
     .item-resource--text .icon {
       width: 20px;
       height: 20px;
       float: left;
       margin-right: 5px; }
-      /* line 74, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+      /* line 82, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
       .item-resource--text .icon--author {
         background: url(../img/author.svg) center center no-repeat;
         background-size: 20px 20px; }
-      /* line 78, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+      /* line 86, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
       .item-resource--text .icon--theme {
         background: url(../img/theme.svg) center center no-repeat;
         background-size: 20px 20px; }
-    /* line 83, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+    /* line 91, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
     .item-resource--text .button {
       position: absolute;
       right: 0;
@@ -1323,12 +1329,12 @@ ol.themes {
       height: 30px;
       display: flex;
       flex-flow: row wrap; }
-      /* line 91, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+      /* line 99, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
       .item-resource--text .button.twice--group {
         border-radius: 15px;
         overflow: hidden;
         border: 1px solid #34677c; }
-      /* line 96, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+      /* line 104, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
       .item-resource--text .button .btn {
         height: 30px;
         padding: 0 20px;
@@ -1337,14 +1343,14 @@ ol.themes {
         background: #7997a4;
         border-radius: 15px;
         line-height: 1.75rem; }
-        /* line 104, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+        /* line 112, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
         .item-resource--text .button .btn.twice {
           border: none;
           border-radius: 0; }
-          /* line 107, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+          /* line 115, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
           .item-resource--text .button .btn.twice:first-child {
             position: relative; }
-            /* line 109, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+            /* line 117, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
             .item-resource--text .button .btn.twice:first-child:after {
               content: '';
               position: absolute;
@@ -1354,35 +1360,35 @@ ol.themes {
               height: 60%;
               width: 1px;
               background: #7997a4; }
-        /* line 121, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+        /* line 129, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
         .item-resource--text .button .btn__border {
           border: 1px solid #34677c; }
-        /* line 124, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+        /* line 132, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
         .item-resource--text .button .btn:hover {
           background: #34677c;
           color: #eee; }
-  /* line 131, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+  /* line 139, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
   .item-resource--resume {
     padding-top: 10px; }
-  /* line 134, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+  /* line 142, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
   .item-resource:last-child {
     border-bottom: none; }
 
-/* line 138, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+/* line 146, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
 .sidebar {
   width: 30%;
   float: right;
   font-size: 0.875rem; }
   @media (max-width: 740px) {
-    /* line 138, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+    /* line 146, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
     .sidebar {
       width: 100%;
       float: none; } }
-  /* line 146, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+  /* line 154, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
   .sidebar--title {
     background: #7997a4;
     height: 40px; }
-    /* line 149, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+    /* line 157, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
     .sidebar--title h2 {
       background: #34677c;
       line-height: 2.5rem;
@@ -1392,23 +1398,23 @@ ol.themes {
       color: #eee;
       text-transform: uppercase;
       font-size: 0.875rem; }
-  /* line 160, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+  /* line 168, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
   .sidebar .form-search {
     background: #e0e0e0;
     margin-top: 10px;
     padding: 10px; }
-    /* line 164, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+    /* line 172, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
     .sidebar .form-search .input-group {
       width: 100%;
       margin-bottom: 15px;
       position: relative; }
-      /* line 168, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+      /* line 176, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
       .sidebar .form-search .input-group::after {
         content: '';
         display: block;
         float: none;
         clear: both; }
-      /* line 174, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+      /* line 182, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
       .sidebar .form-search .input-group input {
         width: 100%;
         background: transparent;
@@ -1419,13 +1425,13 @@ ol.themes {
         transition: all 300ms;
         font-size: 0.875rem;
         color: #444; }
-        /* line 184, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+        /* line 192, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
         .sidebar .form-search .input-group input:focus {
           outline: none;
           background: #eee;
           color: #333;
           border-color: #333; }
-        /* line 190, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+        /* line 198, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
         .sidebar .form-search .input-group input.search {
           width: 140px;
           text-align: center;
@@ -1433,10 +1439,10 @@ ol.themes {
           color: #eee;
           float: right;
           border: none; }
-          /* line 197, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+          /* line 205, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
           .sidebar .form-search .input-group input.search:hover {
             background: #34677c; }
-      /* line 202, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+      /* line 210, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
       .sidebar .form-search .input-group .icon {
         width: 20px;
         height: 34px;
@@ -1444,18 +1450,18 @@ ol.themes {
         margin-right: 5px;
         position: absolute;
         right: 20px; }
-        /* line 209, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+        /* line 217, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
         .sidebar .form-search .input-group .icon--search {
           background: url(../img/lupe.svg) center center no-repeat;
           background-size: 18px 18px; }
-  /* line 216, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+  /* line 224, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
   .sidebar .select {
     width: 100%;
     line-height: 2.125rem;
     background: #eee;
     margin-bottom: 15px;
     position: relative; }
-    /* line 222, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+    /* line 230, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
     .sidebar .select--title {
       height: 34px;
       padding: 0 15px;
@@ -1463,7 +1469,7 @@ ol.themes {
       position: relative;
       transition: all 300ms;
       font-family: Arial; }
-      /* line 229, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+      /* line 237, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
       .sidebar .select--title::before {
         content: '';
         transition: all 300ms;
@@ -1476,14 +1482,14 @@ ol.themes {
         right: 15px;
         top: 50%;
         transform: translate(0, -50%); }
-    /* line 244, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+    /* line 252, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
     .sidebar .select.here .select--title {
       background: #444;
       color: #eee; }
-      /* line 247, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+      /* line 255, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
       .sidebar .select.here .select--title::before {
         opacity: 0; }
-    /* line 252, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+    /* line 260, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
     .sidebar .select--items {
       font-family: Arial;
       max-height: 300px;
@@ -1501,7 +1507,7 @@ ol.themes {
       appearance: none;
       font-weight: 500;
       padding: 0 5px; }
-      /* line 269, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+      /* line 277, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
       .sidebar .select--items--item {
         padding: 5px 15px;
         display: block;
@@ -1509,13 +1515,13 @@ ol.themes {
         border-bottom: 1px solid #7997a4;
         transition: all 300ms;
         line-height: 1.25rem; }
-        /* line 276, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+        /* line 284, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
         .sidebar .select--items--item:hover {
           background: #34677c;
           color: #eee; }
 
 /*Letras buscador*/
-/* line 285, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+/* line 293, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
 .letter-dropdown {
   width: 25px;
   height: 25px;
@@ -1524,15 +1530,24 @@ ol.themes {
   margin: 5px;
   position: relative;
   z-index: 1000; }
-  /* line 293, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+  /* line 301, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
   .letter-dropdown.active {
     z-index: 1100; }
-    /* line 295, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+    /* line 303, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
     .letter-dropdown.active span {
       background: #7997a4;
       color: #eee; }
+  /* line 308, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+  .letter-dropdown .letter--text {
+    background: #7997a4;
+    width: 100%;
+    text-align: center;
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    color: #eee; }
 
-/* line 301, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+/* line 318, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
 .letter-dropdown-button {
   width: 25px;
   height: 25px;
@@ -1542,15 +1557,19 @@ ol.themes {
   color: #eee;
   cursor: pointer;
   transition: all 300ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; }
-  /* line 313, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+  /* line 334, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
   .letter-dropdown-button:hover {
     background: #34677c;
     color: #eee; }
 
-/* line 318, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+/* line 339, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
 .letter-dropdown-list {
   display: none;
   position: absolute;
@@ -1559,7 +1578,7 @@ ol.themes {
   background: #e0e0e0;
   list-style: none;
   padding: 0; }
-  /* line 326, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+  /* line 347, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
   .letter-dropdown-list li {
     display: block;
     min-width: 150px;
@@ -1567,10 +1586,10 @@ ol.themes {
     padding: 5px 15px;
     margin: 0;
     position: relative; }
-    /* line 333, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+    /* line 354, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
     .letter-dropdown-list li a {
       color: #333; }
-    /* line 336, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+    /* line 357, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
     .letter-dropdown-list li::after {
       content: '';
       width: 90%;
@@ -1579,13 +1598,13 @@ ol.themes {
       position: absolute;
       bottom: 0;
       left: 5%; }
-    /* line 345, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+    /* line 366, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
     .letter-dropdown-list li:hover {
       background: #444; }
-      /* line 347, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+      /* line 368, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
       .letter-dropdown-list li:hover a {
         color: #e0e0e0; }
-    /* line 352, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
+    /* line 373, C:/wamp/www/rimisp/maquetacion/scss/objects/_resources.scss */
     .letter-dropdown-list li:last-child::after {
       display: none; }
 

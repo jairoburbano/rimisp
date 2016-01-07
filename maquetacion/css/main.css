@@ -144,8 +144,7 @@ select {
   text-transform: none; }
 
 button,
-html input[type="button"],
-input[type="reset"],
+html input[type="button"], input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -1070,7 +1069,7 @@ ol.themes {
     text-transform: none; }
     .item-resource--title h2 a {
       font-weight: normal !important;
-      color: #000;
+      color: #333;
       margin-right: 5px;
       transition: all 300ms; }
       .item-resource--title h2 a::after {
@@ -1093,7 +1092,7 @@ ol.themes {
       margin-left: 5px;
       font-size: 1.125rem;
       line-height: 1.875rem;
-      color: #444; }
+      color: #333; }
       .item-resource--text--icon:last-child::after {
         opacity: 0; }
     .item-resource--text .icon {
@@ -1300,6 +1299,14 @@ ol.themes {
     .letter-dropdown.active span {
       background: #7997a4;
       color: #eee; }
+  .letter-dropdown .letter--text {
+    background: #7997a4;
+    width: 100%;
+    text-align: center;
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    color: #eee; }
 
 .letter-dropdown-button {
   width: 25px;
@@ -1310,6 +1317,10 @@ ol.themes {
   color: #eee;
   cursor: pointer;
   transition: all 300ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; }

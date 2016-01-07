@@ -36,7 +36,7 @@ $TEAM
             text-transform: none;
             a {
                 font-weight: normal !important;
-                color: #000;
+                color: $principal;
                 margin-right: 5px;
                 transition: all 300ms;
                 &::after {
@@ -67,7 +67,7 @@ $TEAM
             margin-left: 5px;
             font-size: cr(18px);
             line-height: cr(30px);
-            color: $gray;
+            color: $principal;
             &:last-child {
                 &::after {
                     opacity: 0;
@@ -305,6 +305,15 @@ $TEAM
             color: $hover;
         }
     }
+    .letter--text {
+        background: $link60;
+        width: 100%;
+        text-align: center;
+        display: block;
+        height: 25px;
+        line-height: 25px;
+        color: $hover;
+    }
 }
 .letter-dropdown-button {
     width: 25px;
@@ -315,9 +324,13 @@ $TEAM
     color: $hover;
     cursor: pointer;
     transition: all 300ms;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
     -webkit-appearance:none;
-            -moz-appearance:none;
-            appearance:none;
+    -moz-appearance:none;
+    appearance:none;
     &:hover {
         background: $link;
         color: $hover;
