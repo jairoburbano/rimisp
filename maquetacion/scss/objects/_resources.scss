@@ -9,6 +9,9 @@ $TEAM
         float: none;
     }
 }
+.items {
+    margin-top: 20px;
+}
 .item-resource {
     position: relative;
     padding-bottom: 15px;
@@ -16,15 +19,6 @@ $TEAM
     width: 100%;
     padding-right: 15px;
     overflow: hidden;
-    &::after {
-        background: $principal10;
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: calc(100% - 15px);
-        height: 1px;
-    }
     &--title {
         h2 {
             width: 100%;
@@ -57,7 +51,7 @@ $TEAM
         float: left;
         overflow: hidden;
         padding-bottom: 5px;
-        padding-right: 240px;
+        padding-right: 120px;
         position: relative;
         width: 100%;
         &--icon {
@@ -67,7 +61,7 @@ $TEAM
             margin-left: 5px;
             font-size: cr(18px);
             line-height: cr(30px);
-            color: $principal;
+            color: #000;
             &:last-child {
                 &::after {
                     opacity: 0;
@@ -169,6 +163,9 @@ $TEAM
         background: $gray20;
         margin-top: 10px;
         padding: 10px;
+        .lato {
+            font-weight: bold;
+        }
         .input-group {
             width: 100%;
             margin-bottom: 15px;
@@ -298,6 +295,7 @@ $TEAM
     margin: 5px;
     position: relative;
     z-index: $level10;
+    overflow: hidden;
     &.active {
         z-index: $level11;
         span {
@@ -331,6 +329,8 @@ $TEAM
     -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none;
+    padding: 0 15px;
+    min-width: 200px;
     &:hover {
         background: $link;
         color: $hover;
